@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+html{
+    --primary-color: #d4a373;
+    ---secondary-color: #fefae0;
+
+}
+body{
+    background-color: var(---secondary-color);
+    color: var(--primary-color);
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    overflow: hidden;
+    font-family: "Caveat", cursive;
+}
+.screen{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+.screen.visible{
+    display: flex;
+}
+.btn{
+    border: 0;
+    font-family: inherit;
+    background-color: var(--primary-color);
+    color: var(---secondary-color);
+    padding: 15px 20px;
+    cursor: pointer;
+}
+.btn:hover{
+    opacity: 0.9;
+}
+.sweet_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+
+}
+.sweet_list le{
+    margin: 10px;
+}
+.choose_sweet_btn{
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    cursor: pointer;
+    font-family: inherit;
+    width: 150px;
+    height:150px;
+
+}
+.choose_sweet_btn img{
+    width:80px;
+    height:80px;
+    object-fit:contain;
+}
+.choose_sweet_btn:hover{
+    background-color: var(--primary-color);
+    color: var(---secondary-color);
+}
+.game_container{
+    position: relative;
+}
+.time ,.score{
+    position: absolute;
+    top: 20px;
+}
+.time{
+    left:20px;
+}
+.score{
+    right:20px;
+}
+.sweet{
+    cursor:pointer;
+    width:100px;
+    height:100px;
+    position: absolute;
+}

@@ -1,0 +1,50 @@
+*{
+    margin:0;
+}
+body{
+
+}
+img{
+    border-radius: 50%;
+    animation: anim linear infinite;
+    width: 450px;
+}
+.button{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border-color: rgb(0, 88, 202);
+    padding: 0px;
+    background-color: darkgrey;
+    margin: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.wrapper{
+    margin: 0 auto;
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: baseline;
+}
+#on{
+    background-color: rgb(9, 216, 71);
+}
+#off{
+    background-color: red;
+}
+@keyframes anim
+{
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+.wrap{
+    margin: 10px auto;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
