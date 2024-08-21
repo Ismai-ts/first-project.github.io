@@ -2,7 +2,7 @@
 
 .content {
     display: flex;
-    margin: 100px 50px 50px 50px;
+    margin: 100px 20px 0px 20px;
     font-family: sans-serif;
 }
 
@@ -31,7 +31,7 @@
 }
 
 .currentPlayer {
-    width: 140px;
+    width: 105px;
     font-size: 18px;
     display: flex;
     align-items: center;
@@ -40,7 +40,7 @@
 .stat {
     display: flex;
     align-items: center;
-    font-size: 18px;
+    font-size: 10px;
 }
 
 .stat table {
