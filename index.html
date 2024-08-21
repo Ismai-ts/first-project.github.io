@@ -1,19 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Исмаlал</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <h1>Абдулла ер мегаргдий хьона</h1>
-    <h2 class="heading">Memory Game</h2>
-    <h3 class="description">Открой все карточки </h3>
-    <div id="game-board"></div>
-    <h2 id="victory-message"></h2>
-    <button type="button" class="glow-on-hover" id="new-game-button">новая игра</button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tik tak toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
 
-    <script src="script.js"></script>
-  </body>
+        <div class="currentPlayer">
+            <span>Сейчас ходит: <span id="curPlyr">X</span></span>
+        </div>
+
+        <div id="area"></div>
+
+        <div class="stat">
+            <table>
+                <th colspan="2">Статистика</th>
+                <tr>
+                    <td>X</td>
+                    <td><span id="sX">0</span></td>
+                </tr>
+                <tr>
+                    <td>O</td>
+                    <td><span id="sO">0</span></td>
+                </tr>
+                <tr>
+                    <td>Ничьи</td>
+                    <td><span id="sD">0</span></td>
+                </tr>
+            </table>
+        </div>
+
+        <script src="script.js"></script>
+    </div>
+</body>
 </html>
